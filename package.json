@@ -6,17 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-		"prepare": "husky install",
-		"check-types": "tsc --pretty --noEmit",
-		"check-format":"prettier --check .",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "lint": "eslint . --ext ts --ext tsx --ext js",
-		"test-all": "npm run check-format && npm run lint && npm run check-types && npm run build"
+    "prepare": "husky install",
+    "format": "prettier --write . --config ./.prettierrc",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "npx prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build"
   },
   "dependencies": {
+    "@types/styled-components": "^5.1.13",
     "next": "11.1.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.1"
   },
   "devDependencies": {
     "@types/react": "17.0.19",
