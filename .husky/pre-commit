@@ -1,0 +1,29 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo 'Styling, testing and building project before commit'
+
+# ts config
+npm run check-types || (
+	echo 'Failed type check'
+	false; 
+)
+# prettier
+npm run check-format || (
+	echo 'Failed formatting' 
+	false; 
+)
+# eslint
+npm run lint || (
+	echo 'Failed linting' 
+	false; 
+)
+
+echo 'Test passes, building an application.'
+#building
+npm run build || (
+	echo 'build failed. View errors for more information.'
+	false;
+)
+
+echo 'commiting changes'
