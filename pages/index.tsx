@@ -1,13 +1,14 @@
 import React from 'react';
-import FirstHeader from '@/components/atoms/firstHeader';
-import SecondHeader from '@/components/atoms/secondHeader';
+import Heading from '@/components/atoms/Heading';
 import Paragraph from '@/components/atoms/paragraph';
 import Button from '@/components/atoms/button';
 
 const Home = (): JSX.Element => (
   <>
-    <FirstHeader>HA 5</FirstHeader>
-    <SecondHeader>Ha 2</SecondHeader>
+    <Heading >HA 5</Heading>
+    <Heading headingType='h2'>HA 5</Heading>
+    <Heading headingType='h3'>HA 5</Heading>
+    <Heading headingType='h4'>HA 5</Heading>
     <Paragraph>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aliquam
       neque distinctio similique architecto. Dicta, saepe sint aliquam aliquid

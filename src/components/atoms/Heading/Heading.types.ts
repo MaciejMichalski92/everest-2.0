@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 
-export interface FirstHeaderTypes {
+export interface HeadingTypes {
   children: ReactNode;
+	headingType?: string;
 }

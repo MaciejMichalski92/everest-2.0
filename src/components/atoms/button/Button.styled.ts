@@ -7,7 +7,7 @@ export const StyledButton = styled.button`
   text-transform: uppercase;
   font-weight: 700;
   color: ${(props) => props.theme.colors.white};
-  background-color: ${(props) => props.theme.colors.jazzberyJam};
+  background-color: ${(props) => props.theme.colors.amaranthPurple};
   box-shadow: 0px 2px 5px 1px ${(props) => props.theme.colors.amaranthMP};
   transition: 0.2s;
   overflow: hidden;
@@ -20,9 +20,9 @@ export const StyledButton = styled.button`
     transform: skewX(135deg);
     width: 0;
     height: 100%;
-    background-color: ${(props) => props.theme.colors.sapphireBlue};
+    background-color: ${(props) => props.theme.colors.white};
     opacity: 0.2;
-    transition: 0.3s;
+    transition: 0.2s;
   }
   &::after {
     left: 0;
