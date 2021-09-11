@@ -2,7 +2,17 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+## FIRST OF ALL:
+
+### Create .env.local file in the root of this project.
+
+Inside write:
+
+```
+BASE_URL=www.everest.pl
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev

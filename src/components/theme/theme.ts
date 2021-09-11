@@ -1,10 +1,9 @@
-
 export const sizes = {
-		mobile: '320px',
-		tablet: '768px',
-		laptop: '1024px',
-		smallDesktop: '1440px',
-		desktop: '2560px'
+  mobile: '320px',
+  tablet: '768px',
+  laptop: '1024px',
+  smallDesktop: '1440px',
+  desktop: '2560px',
 };
 export const theme = {
   colors: {
@@ -28,7 +27,7 @@ export const theme = {
     smallDesktop: `(min-width: ${sizes.smallDesktop})`,
     desktop: `(min-width: ${sizes.desktop})`,
   },
-	  fontSize: {
+  fontSize: {
     mobile: '8px',
     tablet: '10px',
     desktop: '12px',
