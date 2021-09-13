@@ -6,7 +6,7 @@ import SeoHead from '@/components/SeoHead';
 
 const Home = (): JSX.Element => (
   <>
-    <SeoHead />
+    <SeoHead title='Artykuły' />
     <Heading>HA 5</Heading>
     <Heading headingType='h2'>HA 5</Heading>
     <Heading headingType='h3'>HA 5</Heading>

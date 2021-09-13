@@ -9,8 +9,6 @@ export const SeoHead = ({
 }: SeoHeadTypes): ReactElement => {
   const router = useRouter();
 
-  console.log(router);
-
   return (
     <Head>
       <title>{title} | EveRest</title>
