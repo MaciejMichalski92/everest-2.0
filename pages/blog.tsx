@@ -1,7 +1,7 @@
 import React from 'react';
-import Heading from '@/components/atoms/Heading';
-import Paragraph from '@/components/atoms/paragraph';
-import Button from '@/components/atoms/button';
+import Heading from '@/atoms/Heading';
+import Paragraph from '@/atoms/Paragraph';
+import Button from '@/atoms/Button';
 import SeoHead from '@/components/SeoHead';
 
 const Home = (): JSX.Element => (

@@ -14,7 +14,7 @@ export const theme = {
     jazzberyJam: '#A01A58',
     amaranthMP: '#892B64',
     palarinatePurple: '#723C70',
-    cyberGrape: '5C4D7D',
+    cyberGrape: '#5C4D7D',
     bdazzledBlue: '#455E89',
     sapphireBlue: '#2E6F95',
     cgBlue: '#1780A1',

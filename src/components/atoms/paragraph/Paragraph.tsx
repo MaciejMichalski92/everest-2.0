@@ -1,7 +1,16 @@
 import React, { ReactElement } from 'react';
+import { StyledParagraph, StyledThickParagraph } from './Paragraph.styled';
 import { ParagraphTypes } from './Paragraph.types';
-import { StyledParagraph } from './Paragraph.styled';
 
-export const Paragraph = ({ children }: ParagraphTypes): ReactElement => (
-  <StyledParagraph>{children}</StyledParagraph>
+export const Paragraph = ({
+  children,
+  thick,
+}: ParagraphTypes): ReactElement => (
+  <>
+    {thick ? (
+      <StyledThickParagraph>{children}</StyledThickParagraph>
+    ) : (
+      <StyledParagraph>{children}</StyledParagraph>
+    )}
+  </>
 );

@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
 
-export interface ParagraphTypes {
+export interface FooterTypes {
   children: ReactNode;
-  thick?: boolean;
 }
