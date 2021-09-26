@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export interface AnchorTypes {
-  children: string;
+  children: ReactNode;
 }

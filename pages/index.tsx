@@ -5,7 +5,7 @@ import Button from '@/components/atoms/Button';
 import SeoHead from '@/components/SeoHead';
 import Nav from '@/components/molecules/Nav';
 import Footer from '@/organisms/Footer';
-import Div from '@/components/molecules/Div';
+import Div from '@/components/atoms/Div';
 
 const Home = (): JSX.Element => (
   <>
