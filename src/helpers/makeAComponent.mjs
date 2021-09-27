@@ -5,9 +5,9 @@ const dirPath = `/src/components/${
 }/${process.argv[3] ? process.argv[3] : 'NewComponent'}`;
 const componentName = process.argv[3] || 'NewComponent';
 const contentIndex = `export { ${componentName} as default } from './${componentName}';`;
-const contentStyled = `import styled from 'styled-components';\nexport const Styled${componentName} = styled`;
+const contentStyled = `import styled from 'styled-components';\r\n\r\nexport const Styled${componentName} = styled`;
 const contentTypes = `export interface ${componentName}Types {};`;
-const contentComponent = `import React, { ReactElement } from 'react';\nexport const ${componentName} = ({}: ${componentName}Types): ReactElement => {};`;
+const contentComponent = `import React, { ReactElement } from 'react';\r\nimport { ${componentName}Types } from './${componentName}.types';\r\nimport { Styled${componentName} } from './${componentName}.styled';\r\n\r\nexport const ${componentName} = ({}: ${componentName}Types): ReactElement => {};`;
 
 const createDir = (dirPath) => {
   fs.mkdirSync(`${process.cwd()}${dirPath}`, { recursive: true }, (err) => {

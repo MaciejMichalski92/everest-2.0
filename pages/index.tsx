@@ -1,26 +1,25 @@
 import React from 'react';
 import Heading from '@/atoms/Heading';
-import Paragraph from '@/components/atoms/Paragraph';
-import Button from '@/components/atoms/Button';
+import Paragraph from '@/atoms/Paragraph';
+import Button from '@/atoms/Button';
 import SeoHead from '@/components/SeoHead';
-import Nav from '@/components/molecules/Nav';
+import Nav from '@/molecules/Nav';
 import Footer from '@/organisms/Footer';
-import Div from '@/components/atoms/Div';
+import Div from '@/atoms/Div';
+import RestaurantTile from '@/molecules/RestaurantTile';
 
 const Home = (): JSX.Element => (
   <>
     <SeoHead />
     <Nav />
+    <Div>
+      <Heading>Div Tytuł</Heading>
+    </Div>
+    <RestaurantTile picSrc='https://www.restu.pl/ir/restaurant/1cf/1cfdbb74bc356edd1bcc5d31467ec48c--c732xc400.jpg'></RestaurantTile>
     <Heading>Tytuł 1</Heading>
     <Heading headingType='h2'>Tytuł 2</Heading>
     <Heading headingType='h3'>Tytuł 3</Heading>
     <Heading headingType='h4'>Tytuł 4</Heading>
-    <Div>
-      <Heading>Div Tytuł</Heading>
-    </Div>
-    <Div width={'500px'} height={'200px'}>
-      <Heading>Div Tytuł</Heading>
-    </Div>
     <Paragraph>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error recusandae
       totam, iure, alias laborum tempore maiores id aut voluptas officiis

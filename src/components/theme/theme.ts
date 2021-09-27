@@ -19,6 +19,7 @@ export const theme = {
     sapphireBlue: '#2E6F95',
     cgBlue: '#1780A1',
     blueMunsell: '#0091AD',
+    whiteOpacity: 'rgba(255,255,255,0.6)',
   },
   breakpoints: {
     mobile: `(min-width: ${sizes.mobile})`,
