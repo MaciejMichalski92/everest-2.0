@@ -22,6 +22,11 @@
       "@/theme/*": ["src/components/theme/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/helpers/makeAComponent.mjs"
+  ],
   "exclude": ["node_modules"]
 }
