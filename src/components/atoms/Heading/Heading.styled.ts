@@ -34,6 +34,7 @@ export const StyledHeadingThree = styled.h3`
 export const StyledHeadingFour = styled.h4`
   font-size: 1.8rem;
   font-weight: 200;
+  margin: 15px 0;
   @media ${theme.breakpoints.tablet} {
     font-size: 2rem;
   }

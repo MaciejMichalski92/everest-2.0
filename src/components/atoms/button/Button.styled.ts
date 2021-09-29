@@ -1,18 +1,30 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { StyledButtonProps } from './Button.types';
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.button<StyledButtonProps>`
   position: relative;
   padding: 10px 20px;
   border: none;
   text-transform: uppercase;
   font-weight: 700;
-  color: ${(props) => props.theme.colors.white};
-  background-color: ${(props) => props.theme.colors.amaranthPurple};
-  box-shadow: 0px 2px 5px 1px ${(props) => props.theme.colors.amaranthMP};
+  color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.amaranthPurple};
+  box-shadow: 0px 2px 5px 1px ${({ theme }) => theme.colors.amaranthMP};
   transition: 0.2s;
   overflow: hidden;
-  &::before,
-  &::after {
+
+  ${({ secondary }) =>
+    secondary &&
+    css`
+      font-size: 0.9rem;
+      background-color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }) => theme.colors.amaranthMP};
+      box-shadow: 0px 2px 5px 1px
+        ${({ theme }) => theme.colors.palarinatePurple};
+    `};
+
+  ::before,
+  ::after {
     content: '';
     position: absolute;
     top: 0;
@@ -20,30 +32,41 @@ export const StyledButton = styled.button`
     transform: skewX(135deg);
     width: 0;
     height: 100%;
-    background-color: ${(props) => props.theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.white};
     opacity: 0.2;
     transition: 0.2s;
   }
-  &::after {
+
+  ::after {
     left: 0;
     width: 0;
     height: 0;
     transform: skewX(-45deg);
   }
-  &:hover {
+
+  :hover {
     cursor: pointer;
-    background-color: ${(props) => props.theme.colors.amaranthPurple};
-    &::before {
+    background-color: ${({ theme }) => theme.colors.amaranthPurple};
+
+    ${({ secondary }) =>
+      secondary &&
+      css`
+        color: ${({ theme }) => theme.colors.white};
+      `};
+
+    ::before {
       left: 93%;
       width: 25%;
     }
-    &::after {
+
+    ::after {
       left: -15%;
       height: 100%;
       width: 25%;
     }
   }
-  &:active {
-    background-color: ${(props) => props.theme.colors.blueMunsell};
+
+  :active {
+    background-color: ${({ theme }) => theme.colors.palarinatePurple};
   }
 `;

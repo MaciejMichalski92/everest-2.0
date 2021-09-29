@@ -1,23 +1,47 @@
 import styled from 'styled-components';
 import theme from '@/components/theme';
 
+export const StyledRestaurantTileWrapper = styled.div`
+  padding: 10px;
+  width: fit-content;
+  box-shadow: 1px 2px 5px ${theme.colors.palarinatePurple};
+  border-radius: 10px;
+  transition: 0.3s;
+
+  :hover {
+    box-shadow: 1px 2px 5px ${theme.colors.amaranthPurple};
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  div {
+    :last-of-type {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  button {
+    align-self: flex-end;
+  }
+`;
+
 export const StyledRestaurantTile = styled.div`
   position: relative;
-  width: 200px;
-  height: 260px;
+  width: 230px;
+  height: 200px;
   cursor: pointer;
   overflow: hidden;
-  border: 2px solid ${theme.colors.amaranthMP};
+  border: 2px solid ${theme.colors.black};
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 0.3s;
-
-    @media ${theme.breakpoints.laptop} {
-      height: 250px;
-    }
   }
 
   :hover img {
@@ -32,5 +56,18 @@ export const StyledRestaurantTile = styled.div`
     right: 10px;
     padding: 0 10px;
     background-color: ${theme.colors.whiteOpacity};
+    transition: 0.3s;
+
+    ::after {
+      content: '';
+      position: absolute;
+      bottom: -7px;
+      left: -7px;
+      right: 7px;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      border: 2px solid ${theme.colors.amaranthMP};
+    }
   }
 `;

@@ -13,8 +13,8 @@ export const Nav = (): ReactElement => (
       </Link>
     </ListItem>
     <ListItem>
-      <Link href='/blog' passHref>
-        <StyledAnchor>Aktualności</StyledAnchor>
+      <Link href='/restauracje' passHref>
+        <StyledAnchor>Restauracje</StyledAnchor>
       </Link>
     </ListItem>
   </StyledNav>

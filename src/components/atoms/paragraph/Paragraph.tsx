@@ -5,12 +5,13 @@ import { ParagraphTypes } from './Paragraph.types';
 export const Paragraph = ({
   children,
   thick,
+  small,
 }: ParagraphTypes): ReactElement => (
   <>
     {thick ? (
       <StyledThickParagraph>{children}</StyledThickParagraph>
     ) : (
-      <StyledParagraph>{children}</StyledParagraph>
+      <StyledParagraph small={small}>{children}</StyledParagraph>
     )}
   </>
 );
