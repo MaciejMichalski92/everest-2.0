@@ -24,13 +24,7 @@ const Home = (): JSX.Element => (
       totam
     </Paragraph>
     <Button>Wciśnij Guzik</Button>
-    <Footer>
-      <Paragraph>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
-        recusandae totam, iure.
-      </Paragraph>
-      <Paragraph>Lorem, ipsum dolor.</Paragraph>
-    </Footer>
+    <Footer />
   </>
 );
 
