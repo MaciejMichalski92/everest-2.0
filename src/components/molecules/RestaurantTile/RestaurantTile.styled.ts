@@ -9,7 +9,7 @@ export const StyledRestaurantTileWrapper = styled.div`
   transition: 0.3s;
 
   :hover {
-    box-shadow: 1px 2px 5px ${theme.colors.amaranthPurple};
+    box-shadow: 1px 2px 5px ${theme.colors.cyberGrape};
   }
 
   p {
@@ -37,6 +37,22 @@ export const StyledRestaurantTile = styled.div`
   overflow: hidden;
   border: 2px solid ${theme.colors.black};
 
+  ::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+  }
+
+  :hover::after {
+    opacity: 0;
+  }
+
   img {
     width: 100%;
     height: 100%;
@@ -57,6 +73,7 @@ export const StyledRestaurantTile = styled.div`
     padding: 0 10px;
     background-color: ${theme.colors.whiteOpacity};
     transition: 0.3s;
+    z-index: 2;
 
     ::after {
       content: '';

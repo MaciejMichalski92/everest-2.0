@@ -9,7 +9,7 @@ const array = [1, 2, 3, 4, 5, 6, 7, 8];
 const Home = (): JSX.Element => (
   <>
     <SeoHead title='Restauracje' />
-    <Heading headingType='h1'>Restauracje</Heading>
+    <Heading headingType='h4'>Restauracje</Heading>
     <GridWrapper>
       {array.map((element, id) => (
         <RestaurantTile

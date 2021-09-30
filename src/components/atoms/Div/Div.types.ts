@@ -5,3 +5,8 @@ export interface DivTypes {
   width?: string;
   height?: string;
 }
+
+export interface StyledDivProps {
+  width?: string;
+  height?: string;
+}

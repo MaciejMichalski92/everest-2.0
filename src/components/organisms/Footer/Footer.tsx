@@ -1,10 +1,9 @@
 import React, { ReactElement } from 'react';
-import { StyledFooter } from '@/organisms/Footer/Footer.styled';
-import { FooterTypes } from '@/organisms/Footer/Footer.types';
+import { StyledFooter } from './Footer.styled';
 import Paragraph from '@/atoms/Paragraph';
 import FlexColumns from '@/organisms/FlexColumns';
 
-export const Footer = ({ children }: FooterTypes): ReactElement => (
+export const Footer = (): ReactElement => (
   <StyledFooter>
     <FlexColumns
       columnNumber={4}
