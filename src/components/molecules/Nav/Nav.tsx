@@ -20,9 +20,7 @@ export const Nav = (): ReactElement => (
     </ListItem>
     <ListItem>
       <Link href='/restauracje' passHref>
-        <a>
-          <Img picture={false} src='./user.png' />
-        </a>
+        <StyledAnchor>Restauracje</StyledAnchor>
       </Link>
     </ListItem>
   </StyledNav>
