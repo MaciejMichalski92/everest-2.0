@@ -33,6 +33,8 @@ class MyDocument extends Document {
             href='https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap'
             rel='stylesheet'
           />
+          <script src='https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js'></script>
+          <script src='https://unpkg.com/smoothscroll-anchor-polyfill'></script>
         </Helmet>
         <body>
           <Main />

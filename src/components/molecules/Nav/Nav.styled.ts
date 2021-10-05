@@ -8,12 +8,35 @@ export const StyledNav = styled.ul`
   margin: 0;
 
   li {
+    position: relative;
     margin-right: 10px;
     list-style: none;
-  }
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 5px;
 
-  li img {
-    width: 30px;
+    ::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background-color: ${theme.colors.cgBlue};
+      transition: 0.3s;
+    }
+
+    :hover::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background-color: ${theme.colors.palarinatePurple};
+    }
   }
 
   a {

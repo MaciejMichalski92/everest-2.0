@@ -4,7 +4,6 @@ import { StyledNav } from './Nav.styled';
 
 import ListItem from '@/components/atoms/ListItem';
 import { StyledAnchor } from '@/components/atoms/Anchor/Anchor.styled';
-import Img from '@/atoms/Img';
 
 export const Nav = (): ReactElement => (
   <StyledNav>
@@ -19,8 +18,8 @@ export const Nav = (): ReactElement => (
       </Link>
     </ListItem>
     <ListItem>
-      <Link href='/restauracje' passHref>
-        <StyledAnchor>Restauracje</StyledAnchor>
+      <Link href='/logowanie' passHref>
+        <StyledAnchor>Zaloguj się</StyledAnchor>
       </Link>
     </ListItem>
   </StyledNav>
