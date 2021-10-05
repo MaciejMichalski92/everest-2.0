@@ -43,5 +43,9 @@ export const StyledNav = styled.ul`
     color: ${theme.colors.cgBlue};
     font-weight: bold;
     text-decoration: none;
+
+    :hover {
+      color: ${theme.colors.palarinatePurple};
+    }
   }
 `;
