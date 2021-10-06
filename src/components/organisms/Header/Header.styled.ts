@@ -5,6 +5,7 @@ export const StyledHeader = styled.header`
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: flex-end;
   background-color: rgba(255, 255, 255, 0.8);
 
@@ -15,6 +16,6 @@ export const StyledHeader = styled.header`
   }
 
   div img {
-    width: 100%;
+    max-width: 180px;
   }
 `;

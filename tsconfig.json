@@ -19,7 +19,8 @@
       "@/atoms/*": ["src/components/atoms/*"],
       "@/molecules/*": ["src/components/molecules/*"],
       "@/organisms/*": ["src/components/organisms/*"],
-      "@/theme/*": ["src/components/theme/*"]
+      "@/theme/*": ["src/components/theme/*"],
+      "@/config": ["config/index.ts"]
     }
   },
   "include": [
