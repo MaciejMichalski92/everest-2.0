@@ -7,6 +7,7 @@ export const StyledRestaurantTileWrapper = styled.div`
   box-shadow: 1px 2px 5px ${theme.colors.palarinatePurple};
   border-radius: 10px;
   transition: 0.3s;
+  background-color: ${theme.colors.white};
 
   :hover {
     box-shadow: 1px 2px 5px ${theme.colors.cyberGrape};

@@ -23,6 +23,12 @@ export const StyledButton = styled.button<StyledButtonProps>`
         ${({ theme }) => theme.colors.palarinatePurple};
     `};
 
+  ${({ borderRadius }) =>
+    borderRadius &&
+    css`
+      border-radius: ${borderRadius}%;
+    `};
+
   ::before,
   ::after {
     content: '';

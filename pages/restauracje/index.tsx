@@ -15,11 +15,11 @@ const Home = (): JSX.Element => (
         <RestaurantTile
           key={id}
           link='#'
-          restaurantMaxSpace={400}
+          restaurantMaxSpace='400'
           title='Nolita'
           restaurantType='fine-dining'
           picSrc='https://www.restu.pl/ir/restaurant/1cf/1cfdbb74bc356edd1bcc5d31467ec48c--c732xc400.jpg'
-        ></RestaurantTile>
+        />
       ))}
     </GridWrapper>
   </>

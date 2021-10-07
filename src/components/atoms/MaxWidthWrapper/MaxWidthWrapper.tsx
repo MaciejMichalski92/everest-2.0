@@ -4,6 +4,9 @@ import { StyledMaxWidthWrapper } from './MaxWidthWrapper.styled';
 
 export const MaxWidthWrapper = ({
   children,
+  isCenter,
 }: MaxWidthWrapperTypes): ReactElement => (
-  <StyledMaxWidthWrapper>{children}</StyledMaxWidthWrapper>
+  <StyledMaxWidthWrapper isCenter={isCenter ? isCenter : false}>
+    {children}
+  </StyledMaxWidthWrapper>
 );

@@ -5,9 +5,14 @@ import { ButtonTypes } from './Button.types';
 export const Button = ({
   children,
   secondary,
+  borderRadius,
   onClick,
 }: ButtonTypes): ReactElement => (
-  <StyledButton onClick={onClick} secondary={secondary}>
+  <StyledButton
+    borderRadius={borderRadius}
+    onClick={onClick}
+    secondary={secondary}
+  >
     {children}
   </StyledButton>
 );

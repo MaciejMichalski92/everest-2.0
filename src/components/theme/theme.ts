@@ -7,6 +7,7 @@ export const sizes = {
 };
 export const theme = {
   colors: {
+    lightBlue: '#f0f5ff',
     darkGrey: '#555',
     black: '#333',
     white: '#FFF',
