@@ -10,20 +10,48 @@ import { HeadingTypes } from './Heading.types';
 export const Heading = ({
   children,
   headingType,
+  color,
+  centered,
 }: HeadingTypes): ReactElement => {
-  const HeadingComponent = ({ headingType }: HeadingTypes): ReactElement => {
+  const HeadingComponent = ({
+    headingType,
+    color,
+    centered,
+  }: HeadingTypes): ReactElement => {
     switch (headingType) {
       case 'h2':
-        return <StyledHeadingTwo>{children}</StyledHeadingTwo>;
+        return (
+          <StyledHeadingTwo centered={centered} color={color}>
+            {children}
+          </StyledHeadingTwo>
+        );
       case 'h3':
-        return <StyledHeadingThree>{children}</StyledHeadingThree>;
+        return (
+          <StyledHeadingThree centered={centered} color={color}>
+            {children}
+          </StyledHeadingThree>
+        );
       case 'h4':
-        return <StyledHeadingFour>{children}</StyledHeadingFour>;
+        return (
+          <StyledHeadingFour centered={centered} color={color}>
+            {children}
+          </StyledHeadingFour>
+        );
       default:
-        return <StyledHeadingOne>{children}</StyledHeadingOne>;
+        return (
+          <StyledHeadingOne centered={centered} color={color}>
+            {children}
+          </StyledHeadingOne>
+        );
     }
   };
   return (
-    <HeadingComponent headingType={headingType}>{children}</HeadingComponent>
+    <HeadingComponent
+      centered={centered}
+      color={color}
+      headingType={headingType}
+    >
+      {children}
+    </HeadingComponent>
   );
 };

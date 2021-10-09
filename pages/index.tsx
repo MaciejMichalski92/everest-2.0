@@ -2,6 +2,8 @@ import React from 'react';
 import SeoHead from '@/components/SeoHead';
 import SearchComponent from '@/molecules/SearchComponent';
 import TopRestaurants from '@/molecules/TopRestaurants';
+import Heading from '@/atoms/Heading';
+import theme from '@/components/theme';
 
 const Home = (): JSX.Element => {
   const arrayOfRestaurants = [
@@ -50,6 +52,17 @@ const Home = (): JSX.Element => {
     <>
       <SeoHead />
       <SearchComponent />
+      <Heading centered color={theme.colors.sapphireBlue} headingType='h2'>
+        Top 5 w Warszawie:
+      </Heading>
+      <TopRestaurants arrayOfRestaurants={arrayOfRestaurants} />
+      <Heading centered color={theme.colors.sapphireBlue} headingType='h2'>
+        Kuchnia Polska:
+      </Heading>
+      <TopRestaurants arrayOfRestaurants={arrayOfRestaurants} />
+      <Heading centered color={theme.colors.sapphireBlue} headingType='h2'>
+        Fine-dining:
+      </Heading>
       <TopRestaurants arrayOfRestaurants={arrayOfRestaurants} />
     </>
   );
