@@ -17,6 +17,7 @@ html{
 
 body{
 	font-family: 'Oswald',sans-serif;
+	background-color: ${theme.colors.lightBlue};
 }
 
 ::-webkit-scrollbar {

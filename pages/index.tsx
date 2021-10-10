@@ -2,8 +2,7 @@ import React from 'react';
 import SeoHead from '@/components/SeoHead';
 import SearchComponent from '@/molecules/SearchComponent';
 import TopRestaurants from '@/molecules/TopRestaurants';
-import Heading from '@/atoms/Heading';
-import theme from '@/components/theme';
+import Div from '@/atoms/Div';
 
 const Home = (): JSX.Element => {
   const arrayOfRestaurants = [
@@ -48,22 +47,21 @@ const Home = (): JSX.Element => {
       link: '#',
     },
   ];
+  const bgcArray = {
+    desktop: './searcher-bgc.jpg',
+    mobile: './searcher-bgc-mobile.jpg',
+  };
   return (
     <>
       <SeoHead />
-      <SearchComponent />
-      <Heading centered color={theme.colors.sapphireBlue} headingType='h2'>
-        Top 5 w Warszawie:
-      </Heading>
-      <TopRestaurants arrayOfRestaurants={arrayOfRestaurants} />
-      <Heading centered color={theme.colors.sapphireBlue} headingType='h2'>
-        Kuchnia Polska:
-      </Heading>
-      <TopRestaurants arrayOfRestaurants={arrayOfRestaurants} />
-      <Heading centered color={theme.colors.sapphireBlue} headingType='h2'>
-        Fine-dining:
-      </Heading>
-      <TopRestaurants arrayOfRestaurants={arrayOfRestaurants} />
+      <Div bgc={bgcArray} height='460px'>
+        <SearchComponent />
+      </Div>
+      <TopRestaurants title='Top 5' arrayOfRestaurants={arrayOfRestaurants} />
+      <TopRestaurants
+        title='Nasze rekomendacje'
+        arrayOfRestaurants={arrayOfRestaurants}
+      />
     </>
   );
 };

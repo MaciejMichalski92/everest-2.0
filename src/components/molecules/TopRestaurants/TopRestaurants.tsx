@@ -4,15 +4,18 @@ import {
   StyledTopRestaurants,
   StyledTopRestaurantsDiv,
 } from './TopRestaurants.styled';
-import Heading from '@/atoms/Heading';
 import RestaurantTile from '@/molecules/RestaurantTile';
+import theme from '@/components/theme';
+import Heading from '@/atoms/Heading';
 
 export const TopRestaurants = ({
   arrayOfRestaurants,
+  background,
+  title,
 }: TopRestaurantsTypes): ReactElement => (
-  <StyledTopRestaurants>
-    <Heading color='#fff' headingType='h4'>
-      Popularne:
+  <StyledTopRestaurants background={background}>
+    <Heading color={theme.colors.darkGrey} headingType='h2'>
+      {title}
     </Heading>
     <StyledTopRestaurantsDiv>
       {arrayOfRestaurants.map(

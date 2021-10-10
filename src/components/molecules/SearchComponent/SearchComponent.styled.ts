@@ -2,6 +2,10 @@ import theme from '@/components/theme';
 import styled from 'styled-components';
 
 export const StyledSearchComponent = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
   width: 90%;

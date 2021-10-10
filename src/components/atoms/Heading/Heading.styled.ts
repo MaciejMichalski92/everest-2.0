@@ -26,6 +26,7 @@ export const StyledHeadingTwo = styled.h2<HeadingProps>`
   margin: 10px 0;
   color: ${({ color }) => color};
   text-align: ${({ centered }) => (centered ? 'center' : 'left')};
+  font-family: 'Ephesis', cursive;
 
   @media ${theme.breakpoints.tablet} {
     font-size: 2.6rem;
@@ -36,6 +37,7 @@ export const StyledHeadingThree = styled.h3<HeadingProps>`
   font-size: 2.5rem;
   font-weight: 700;
   color: ${({ color }) => color};
+  text-shadow: 1px 1px 2px #000;
   text-align: ${({ centered }) => (centered ? 'center' : 'left')};
 
   @media ${theme.breakpoints.tablet} {

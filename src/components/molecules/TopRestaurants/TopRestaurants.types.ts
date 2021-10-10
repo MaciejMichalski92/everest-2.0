@@ -6,4 +6,10 @@ export interface TopRestaurantsTypes {
     restaurantType: string;
     link: string;
   }>;
+  background?: string;
+  title: string;
+}
+
+export interface StyledTopRestaurantsProps {
+  background?: string;
 }

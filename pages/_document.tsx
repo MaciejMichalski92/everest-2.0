@@ -40,13 +40,7 @@ class MyDocument extends Document {
   render(): ReactElement {
     return (
       <Html lang='pl'>
-        <Head />
-        <Helmet>
-          <meta charSet='utf-8' />
-          <meta
-            name='viewport'
-            content='width=device-width, initial-scale=1.0'
-          />
+        <Head>
           <link rel='preconnect' href='https://fonts.googleapis.com' />
           <link
             rel='preconnect'
@@ -57,9 +51,20 @@ class MyDocument extends Document {
             href='https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap'
             rel='stylesheet'
           />
-          <script src='https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js'></script>
-          <script src='https://unpkg.com/smoothscroll-anchor-polyfill'></script>
-        </Helmet>
+          <link
+            href='https://fonts.googleapis.com/css2?family=Ephesis&display=swap'
+            rel='stylesheet'
+          />
+          <Helmet>
+            <meta charSet='utf-8' />
+            <meta
+              name='viewport'
+              content='width=device-width, initial-scale=1.0'
+            />
+            <script src='https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js'></script>
+            <script src='https://unpkg.com/smoothscroll-anchor-polyfill'></script>
+          </Helmet>
+        </Head>
         <body>
           <Main />
           <NextScript />

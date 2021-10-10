@@ -1,18 +1,33 @@
 import theme from '@/components/theme';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { StyledTopRestaurantsProps } from './TopRestaurants.types';
 
-export const StyledTopRestaurants = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+export const StyledTopRestaurants = styled.div<StyledTopRestaurantsProps>`
   width: 90%;
-  margin: 0 auto 50px;
+  margin: 50px auto;
   padding: 10px;
-  background-color: ${theme.colors.bdazzledBlue};
+  border: 2px solid ${theme.colors.bdazzledBlue};
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px ${theme.colors.bdazzledBlue};
+
+  ${({ background }) =>
+    background &&
+    css`
+      position: relative;
+      background-image: url('${background}');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    `}
 
   @media ${theme.breakpoints.laptop} {
-    width: 55%;
+    width: 85%;
+    padding: 20px;
+  }
+
+  @media ${theme.breakpoints.smallDesktop} {
+    width: 65%;
+    padding: 20px;
   }
 `;
 
