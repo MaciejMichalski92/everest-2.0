@@ -7,6 +7,7 @@ import {
 import RestaurantTile from '@/molecules/RestaurantTile';
 import theme from '@/components/theme';
 import Heading from '@/atoms/Heading';
+import ReservationPopup from '@/components/organisms/ReservationPopup';
 
 export const TopRestaurants = ({
   arrayOfRestaurants,
@@ -34,5 +35,6 @@ export const TopRestaurants = ({
         )
       )}
     </StyledTopRestaurantsDiv>
+    <ReservationPopup restaurantTitle='Nolita' />
   </StyledTopRestaurants>
 );

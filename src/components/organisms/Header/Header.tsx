@@ -15,7 +15,7 @@ export const Header = (): ReactElement => {
           </a>
         </Link>
       </Div>
-      <Nav />
+      {/*<Nav />*/}
     </StyledHeader>
   );
 };

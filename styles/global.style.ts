@@ -23,10 +23,11 @@ body{
 ::-webkit-scrollbar {
   width: 15px;
   height: 15px;
+	background: ${theme.colors.white}; 
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 2px ${theme.colors.lightBlue}; 
+  box-shadow: inset 0 0 2px ${theme.colors.white}; 
   border-radius: 10px;
 }
  
@@ -36,6 +37,10 @@ body{
 }
 
 ::-webkit-scrollbar-thumb:hover {
+  background: ${theme.colors.lightBlue}; 
+}
+
+::-webkit-scrollbar-thumb:active {
   background: ${theme.colors.lightBlue}; 
 }
 `;
