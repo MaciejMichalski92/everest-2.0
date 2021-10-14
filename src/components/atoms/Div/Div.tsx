@@ -7,9 +7,10 @@ export const Div = ({
   width,
   height,
   bgc,
+  isCentered,
 }: DivTypes): ReactElement => {
   return (
-    <StyledDiv bgc={bgc} width={width} height={height}>
+    <StyledDiv isCentered={isCentered} bgc={bgc} width={width} height={height}>
       {children}
     </StyledDiv>
   );

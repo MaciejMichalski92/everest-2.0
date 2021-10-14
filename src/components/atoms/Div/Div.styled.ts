@@ -18,4 +18,11 @@ export const StyledDiv = styled.div<StyledDivProps>`
         background-image: url('${bgc.desktop}');
       }
     `}
+  ${({ isCentered }) =>
+    isCentered &&
+    css`
+      display: flex;
+      align-items: ${isCentered.align ? isCentered.align : 'center'};
+      justify-content: ${isCentered.justify ? isCentered.justify : 'center'};
+    `}
 `;

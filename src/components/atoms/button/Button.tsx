@@ -6,13 +6,17 @@ export const Button = ({
   children,
   secondary,
   borderRadius,
+  noStyles,
   onClick,
-}: ButtonTypes): ReactElement => (
-  <StyledButton
-    borderRadius={borderRadius}
-    onClick={onClick}
-    secondary={secondary}
-  >
-    {children}
-  </StyledButton>
-);
+}: ButtonTypes): ReactElement =>
+  noStyles ? (
+    <button>{children}</button>
+  ) : (
+    <StyledButton
+      borderRadius={borderRadius}
+      onClick={onClick}
+      secondary={secondary}
+    >
+      {children}
+    </StyledButton>
+  );
